@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .item{
+            border: 2px solid tomato;
+            margin: 14px 44px ;
+            /* box-shadow: offset-x offset y blur-radius spread radius color; */
+            box-shadow: 14px 14px 5px 5px rgb(8, 153, 122);
+        }
+        #item1{
+            box-shadow:-23px 32px 4px 4px green  ;
+        }
+        #item2{
+            /* to move inside   */
+            box-shadow:inset 22px 22px 55px 55px coral;
+        }
+        h2{ 
+            /* text-shadow: offset-x offset-y blur radius color ; */
+
+            text-shadow: 3px 3px 5px  tomato ;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="item1">
+            <h2>This is C++ tutorial</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo doloribus impedit sapiente delectus, atque
+                provident sequi accusantium voluptatum modi perferendis corporis praesentium? Qui omnis totam
+                necessitatibus quibusdam, accusantium inventore ipsam.</p>
+        </div>
+
+            <div class="item" id="item2">
+                <h2>This is Html tutoria</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti deserunt veritatis omnis
+                    velit, quo maiores? Facilis quod eaque, recusandae voluptatem ipsam rerum pariatur id consequatur
+                    soluta aliquid perspiciatis? Dolore?</p>
+            </div>
+            <div class="item" id="item3">
+<h2>THis is java tutorials</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorem est quos, iusto vitae non
+                    magni? Ut, aliquam omnis magni ad, aut eligendi iusto possimus laudantium et facilis quod mollitia!
+                </p>
+            </div>
+
+        </div>
+</body>
+
+</html>

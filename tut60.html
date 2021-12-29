@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrows functions in JS </title>
+</head>
+
+<body>
+    <script>
+        // Arrows functions in JS 
+        // first method 
+        function greet(name) {
+            console.log('Good Morning ' + name);
+        }
+        greet("asif");
+
+        // Second method 
+        let sum = (a, b) => {
+            return a + b;
+        }
+
+        // third method 
+        let sum2 = (a, b) => a + b; //for two argurments 
+        // console.log(sum2);
+        // fouth method 
+        let half = a => a / 2; //for single argument
+        console.log(half);
+
+        // setInterval(() => {
+
+        // }, interval);
+        setTimeout(() =>
+            console.log('i am inside the setTimeout'), 3000);
+
+
+
+        let obj1 = {
+            greeting:"good morning",
+            name: ['asif', 'kasif', 'saqi'],
+            speak() {                       //this function is used to point his parent element
+                this.name.forEach((student) => {
+                    console.log(this.greeting+"kudoo koo" + student); //this determine obj1 that is his parent
+                    // if use function, then this is his own function but if use arrow function then this is his parent elemet that is obj1
+                });
+            }
+        }
+        obj1.speak();
+
+    </script>
+</body>
+
+</html>

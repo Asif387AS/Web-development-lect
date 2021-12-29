@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        .navbar {
+            background-color: black;
+            border-radius: 25px;
+            color: white;
+            margin: 6px 6px;
+
+
+        }
+
+        nav ul {
+            overflow: auto;
+            padding: 6px 3px;
+            padding-left: 4px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            padding: 3px 5px;
+            font: itali;
+            font-size: 22px;
+            font: bolder;
+            font-weight: 500px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            font-weight: 39px;
+        }
+
+        .navbar input {
+            float: right;
+            border-radius: 8px;
+            border: 3px solid red;
+            padding: 2px;
+            width: 129px;
+            margin-right: 10px;
+            margin-top: 3px;
+          
+        }
+
+        .navbar li a:hover {
+            color: tomato;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 17px;
+        }
+
+        .navbar li a:active {
+            color: rgb(81, 34, 209);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 17px;
+        }
+
+        .navbar li a:visited {
+            /* color: rgb(71, 255, 126); */
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 17px;
+        }
+        .search{
+            background-color: coral;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="http://google.com">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Services</a></li>
+                <li> <a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type=" text" class="search" name="seach" placeholder="search the website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

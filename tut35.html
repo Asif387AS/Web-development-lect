@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Cusotom Properties</title>
+    <style>
+        :root{
+            --primary-color:blue;
+            --mwidth:200px;
+            --mheight: 200px;
+            --contwidth: 800px;
+        }
+        .container{
+            display: flex;
+            max-width: var(--mwidth);
+            border: 3px solid var(--primary-color);
+            max-width: var(--contwidth);
+            justify-content: center;
+            
+
+
+        }
+        .item{
+            border: 3px solid green;
+max-height: var(--mheight);
+max-width: var(--mwidth);
+margin:25px 25px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">I am first container</div>
+        <div class="item">I am second container</div>
+        <div class="item">I am third container</div>
+    </div>
+</body>
+</html>

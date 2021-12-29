@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeOut,clearTimeout,setITimout and clearInterval in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        Time Now is: <span id="time"></span>
+
+    </div>
+    <script>
+        console.log('tut58');
+        // setTimeout -->this function allows to run a function after a certain time period only once 
+        // cleartTimeout will clear the  interval at first loop in setTImeout
+        // setIntervel --> this allows the function to run the repeatdly after a certain time period 
+        //clearInterval -->clear the iterations of setInterval funtion 
+        function greet(name, bymsg) {
+            console.log('Hello Good morning ' + name + bymsg);
+        }
+        // setTimeout(greet('asif','takecare'),5000,);  we cannot call funtion insde setTimeout 
+        // let setTime=setTimeout(greet,5000,'asif','takecare');
+        // clearTimeout(setTime);
+
+        function greet(name, bymsg) {
+            console.log('Hello Good morning ' + name + bymsg);
+        }
+        let SetTime = setInterval(greet, 5000, 'asif', 'take care'); //it return an id. using this id and storing it in varible we stop the iterations
+        clearInterval(SetTime);//to clear the time interval 
+
+
+        function displayTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+
+</html>

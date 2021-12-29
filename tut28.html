@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <!-- these units stricktly used for the responsiveness of webistes--aim of this topic is to get a responsive website  -->
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .container{
+            border: 2px solid rgb(202, 76, 76);
+margin-left: 25%;
+            /* font-size: 10px; */
+
+    
+height: 50vh;
+width: 50vw;
+display: flex;
+justify-content: center;
+align-items: center;
+        }
+h1{
+    text-align: center;
+}
+
+.second{
+    /* em will take font size according to his container and cont-size* n em and padding is according to font size in em converted " cont_size* n em" */
+    /* font-size: 3em;
+    padding: 3em;*/
+
+    /* rem will take padding and  font size according to window opened and multiply "windoow* n rem" */
+    /* font-size: 3rem;
+    padding: 3rem; */
+
+} 
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1 class="first">This is first Heading</h1>
+    <h1 class="second">This is second Heading</h1>
+    <h1 class="third">This is third Heading</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "tut69",
+  "version": "1.0.0",
+  "description": "This is best package ever built by someone",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "awsome"
+  },
+  "keywords": [
+    "awsome"
+  ],
+  "author": "asif",
+  "license": "ISC"
+}

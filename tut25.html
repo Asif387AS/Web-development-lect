@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position Property</title>
+    <style>
+        .container{
+            border: 3px solid black;
+            margin: 5px;
+            background-color: blanchedalmond;
+            height: 4344px;
+        }
+        .box{
+            border: 2px solid blue;
+            margin: 4px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+
+          
+        }
+        #box3
+        {
+            /* static position is default */
+            /* absolute: relate to its parent or window position .from its first parent and leave a gap from its orig positoin  */
+            /* position: absolute  ;
+            top: 2px;
+            left: 3px; */
+
+            /* relative: relative to its normal position...parent posit  */
+
+            /* position: relative;
+            top: 30px;
+            left: 30px; */
+
+/* fixed: fix at one place while scrolling  ...from browser window */
+            /* position: fixed;
+        bottom: 2px;
+        left: 0px; */
+
+        /* stickky: to stich a box at one place while scrollin; */
+          position: sticky;
+          top: 2px;
+          left: 2px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">asif</div>
+        <div class="box" id="box2">kasif</div>
+        <div class="box" id="box3">saqib</div>
+        <div class="box" id="box4">tayyab</div>
+    </div>
+</body>
+</html>
